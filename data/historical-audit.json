@@ -1,0 +1,185 @@
+{
+  "new_provider_calls": 0,
+  "historical_completed_answer_calls_available": 243,
+  "input_hashes": {
+    "sources.json": "bc52a3dee1f95c66074f6ad484f0bd8bf1caa87d558daa05489c37304315fd50",
+    "questions.json": "c590b56f4646e0f5049280a4dda8cfed5d0f4f07ee562a2959c7099c3e56b2fc",
+    "units.json": "722844963c800c702801c5cb148f03303860277a23e6bee92eba3a0395d3b8c8",
+    "result-navigation-repaired.json": "c67b3f5ef81899f0d9684a51ca54992f6f7da7ff162c278b0df45dedf1661d4f",
+    "review-result.json": "4ee7394590c1d9ffb287184f0569af9aa8d1c91aa8bdc43c6fc5d6784a7f2c6f"
+  },
+  "rows": 240,
+  "requests_bound": 240,
+  "methods": {
+    "agent": {
+      "total": 48,
+      "legacy_answer_passed": 23.0,
+      "existing_semantic_answer_passed": 24,
+      "framework_counts": {
+        "PASS": 24,
+        "FAIL": 24,
+        "ERROR": 0,
+        "NOT_RUN": 0,
+        "UNCERTAIN": 0
+      },
+      "complete_original_chains": 17,
+      "first_loss": {
+        "assembly": 20,
+        "null": 28
+      },
+      "reasons": {
+        "incomplete_final_evidence": 23,
+        "behavior_not_verified": 1
+      },
+      "answer_pass_but_incomplete_chain": [],
+      "complete_chain_but_legacy_answer_failed": [
+        "Q22a1f051de"
+      ]
+    },
+    "hybrid": {
+      "total": 48,
+      "legacy_answer_passed": 16.0,
+      "existing_semantic_answer_passed": 16,
+      "framework_counts": {
+        "PASS": 16,
+        "FAIL": 32,
+        "ERROR": 0,
+        "NOT_RUN": 0,
+        "UNCERTAIN": 0
+      },
+      "complete_original_chains": 8,
+      "first_loss": {
+        "assembly": 17,
+        "null": 31
+      },
+      "reasons": {
+        "incomplete_final_evidence": 32
+      },
+      "answer_pass_but_incomplete_chain": [],
+      "complete_chain_but_legacy_answer_failed": []
+    },
+    "hybrid_graph": {
+      "total": 48,
+      "legacy_answer_passed": 20.0,
+      "existing_semantic_answer_passed": 20,
+      "framework_counts": {
+        "PASS": 22,
+        "FAIL": 26,
+        "ERROR": 0,
+        "NOT_RUN": 0,
+        "UNCERTAIN": 0
+      },
+      "complete_original_chains": 15,
+      "first_loss": {
+        "assembly": 25,
+        "null": 23
+      },
+      "reasons": {
+        "incomplete_final_evidence": 25,
+        "behavior_not_verified": 1
+      },
+      "answer_pass_but_incomplete_chain": [],
+      "complete_chain_but_legacy_answer_failed": [
+        "Q3317318d89",
+        "Qf444b8a077"
+      ]
+    },
+    "hybrid_raptor": {
+      "total": 48,
+      "legacy_answer_passed": 16.0,
+      "existing_semantic_answer_passed": 16,
+      "framework_counts": {
+        "PASS": 16,
+        "FAIL": 32,
+        "ERROR": 0,
+        "NOT_RUN": 0,
+        "UNCERTAIN": 0
+      },
+      "complete_original_chains": 8,
+      "first_loss": {
+        "assembly": 17,
+        "null": 31
+      },
+      "reasons": {
+        "incomplete_final_evidence": 32
+      },
+      "answer_pass_but_incomplete_chain": [],
+      "complete_chain_but_legacy_answer_failed": []
+    },
+    "hybrid_wiki": {
+      "total": 48,
+      "legacy_answer_passed": 32.0,
+      "existing_semantic_answer_passed": 32,
+      "framework_counts": {
+        "PASS": 32,
+        "FAIL": 16,
+        "ERROR": 0,
+        "NOT_RUN": 0,
+        "UNCERTAIN": 0
+      },
+      "complete_original_chains": 24,
+      "first_loss": {
+        "null": 38,
+        "assembly": 10
+      },
+      "reasons": {
+        "incomplete_final_evidence": 16
+      },
+      "answer_pass_but_incomplete_chain": [
+        "Q8bb6e70bce"
+      ],
+      "complete_chain_but_legacy_answer_failed": [
+        "Qf444b8a077"
+      ]
+    }
+  },
+  "current_assembly_counts": {
+    "PASS": 4,
+    "FAIL": 36,
+    "ERROR": 0,
+    "NOT_RUN": 0,
+    "UNCERTAIN": 0
+  },
+  "current_assembly_reasons": {
+    "incomplete_final_evidence": 36
+  },
+  "preserved_window_counts": {
+    "PASS": 4,
+    "FAIL": 36,
+    "ERROR": 0,
+    "NOT_RUN": 0,
+    "UNCERTAIN": 0
+  },
+  "assembly_paired": {
+    "total": 40,
+    "wins": 0,
+    "ties": 40,
+    "losses": 0,
+    "mean_delta": 0,
+    "families": 40,
+    "family_bootstrap_95_interval": [
+      0,
+      0
+    ],
+    "quality_claim_eligible": true,
+    "limitation": "Failures, errors and missing cases remain in operational denominator; template families may not be independent business samples."
+  },
+  "limitations": [
+    "Historical dataset is synthetic, not human business ground truth.",
+    "Actor/ACL are reconstructed corpus fixtures, not proof of historical authorization.",
+    "Framework codepoint guard is diagnostic; original 4000-token budget checked separately.",
+    "Complete source chain does not validate table calculation or final answer.",
+    "Current assembly uses recorded upstream results; no live retrieval or generation."
+  ],
+  "provenance": {
+    "recorded_at": "2026-10-24",
+    "dataset": "crossdoc-hard-20261024-01",
+    "sources": 168,
+    "questions": 48,
+    "methods": 5,
+    "answerable_questions": 40,
+    "data_type": "synthetic challenge corpus, actual recorded executions",
+    "raw_provider_ledgers_published": false,
+    "note": "Aggregate historical evidence; reproduction requires separately supplied original corpus and records."
+  }
+}

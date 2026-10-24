@@ -1,0 +1,59 @@
+{
+  "all_detected": true,
+  "cases": [
+    {
+      "mutation": "old-version",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reasons": [
+        "source_version_or_anchor_mismatch:final",
+        "incomplete_final_evidence"
+      ]
+    },
+    {
+      "mutation": "cross-kb",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reasons": [
+        "unauthorized_source:final:exact-0",
+        "incomplete_final_evidence"
+      ]
+    },
+    {
+      "mutation": "wrong-hash",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reasons": [
+        "source_version_or_anchor_mismatch:final",
+        "incomplete_final_evidence"
+      ]
+    },
+    {
+      "mutation": "table",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reasons": [
+        "original_text_mismatch:final",
+        "incomplete_final_evidence"
+      ]
+    },
+    {
+      "mutation": "negation",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reasons": [
+        "original_text_mismatch:final",
+        "incomplete_final_evidence"
+      ]
+    },
+    {
+      "mutation": "multihop",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "reasons": [
+        "incomplete_final_evidence"
+      ]
+    }
+  ],
+  "model_calls": 0
+}

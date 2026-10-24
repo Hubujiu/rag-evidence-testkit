@@ -1,0 +1,17 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m ruff check src tests scripts
+      - run: python -m pytest -q
+      - run: python scripts/rag_test.py replay --suite config/suite-v1.json --plan config/plan-v1.json --traces config/oracle-traces-v1.json --output reports/ci-controls

@@ -1,0 +1,17 @@
+{
+  "framework": "rag-testing/1.0",
+  "compatibility_tests": 168,
+  "new_framework_tests": 41,
+  "failures": 0,
+  "static_check": "PASS",
+  "oracle_controls": 24,
+  "mutation_controls": 6,
+  "new_remote_model_calls": 0,
+  "production_quality_claim": false,
+  "limitations": [
+    "Synthetic scorer controls are not product quality results.",
+    "Remote semantic reviewer and real business golden set are not activated.",
+    "Historical experiments have not been rerun or overwritten."
+  ],
+  "scope": "Original workspace verification before standalone packaging; not standalone test count."
+}
